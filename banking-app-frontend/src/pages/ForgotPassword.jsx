@@ -33,7 +33,7 @@ const ForgotPassword = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(API_URL + '/api/auth/forgot-password', {
+      const response = await fetch(API_URL + '/auth/forgot-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -65,7 +65,7 @@ const ForgotPassword = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(API_URL + '/api/auth/reset-password', {
+      const response = await fetch(API_URL + '/auth/reset-password', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
